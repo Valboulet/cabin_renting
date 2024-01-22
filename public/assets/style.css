@@ -1,0 +1,203 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap');
+
+:root {
+  --darkgreen: #0D6654;
+  --light: #FAF0CA;
+  --pear: #BEDD31;
+  --asparagus: #809F3A;
+  --brown: #3B2B28;
+  --black: #180501;
+}
+
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+  
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+
+/* Button style ----------------------------------------------------------------------------------------- */
+
+.bt-classic{
+  background-color: var(--darkgreen);
+  color: white;
+  letter-spacing: 0.10em;
+}
+.bt-classic:hover {
+  background-color: var(--pear) !important;
+  color: var(--black);
+}
+.bt-other{
+  background-color: var(--brown);
+  color: white;
+  letter-spacing: 0.10em;
+}
+.bt-other:hover {
+  background-color: var(--pear)!important;
+  color: var(--white);
+}
+.bt-booking {
+  background-color: var(--asparagus);
+  color: var(--brown);
+  width: 100%;
+  font-size: 1.2em;
+}
+.bt-booking:hover {
+  background-color: var(--darkgreen);
+}
+
+
+
+/* Navigation bar */
+
+nav {
+  max-width: 1440px;
+  margin: auto;
+  background-color: var(--darkgreen);
+  letter-spacing: 0.15em;
+}
+nav .lnk-nav {
+  color: var(--light);
+  font-size: 0.9em;
+}
+nav .lnk-nav:hover,
+nav .lnk-nav:focus {
+  color: var(--pear);
+}
+
+nav .drp-account {
+  letter-spacing: 0.15em;
+}
+
+nav .drp-account:hover,
+nav .drp-account:focus {
+  color: var(--pear);
+}
+
+nav img {
+  border-radius: 5px;
+}
+
+
+/* Footer */
+
+footer {
+  max-width: 1440px;
+  background-color: var(--darkgreen);
+  min-height: 200px;
+}
+
+footer span  {
+  color: var(--light);
+}
+
+footer p  {
+  color: var(--light);
+}
+
+footer img {
+  border-radius: 5px;
+}
+
+
+/* Home page */
+
+.hero {
+  max-width: 1440px;
+  margin: auto;
+  background-image: linear-gradient(rgba(157, 207, 157, 0.132), rgba(6, 31, 9, 0.732)),
+  url("/images/hero.jpg");  background-repeat: no-repeat;
+  min-height: 70vh;
+}
+
+.hero-content {
+  color: var(--light);
+  position: relative;
+  top: 50vh;
+  margin-inline: auto;
+}
+
+.hero a:hover {
+  color: var(--black);
+  background-color: var(--pear);
+}
+
+
+/* Login page */
+
+.lgn {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--asparagus);
+}
+.lgn .lgn-logo {
+  width: 250px;
+}
+.lgn .lgn-form {
+  width: 425px;
+}
+
+
+/* Booking page */
+
+
+.account {
+  max-width: 1440px;
+  background-color: var(--asparagus);
+}
+
+.booking-area {
+  background-color: white;
+}
+
+.cabin-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.res-content h3 {
+  color: var(--brown);
+}
+
+.res-content p {
+  color: var(--brown);
+}
+
+.booking-area {
+  max-height: 550px;
+  overflow-y: scroll;
+}
+
+
+/* Admin  ------------------------------------------------------------------------------- */
+
+/* Rental map */
+
+.rental-map .client-name {
+  color: var(--light);
+  font-size: 1.2em;
+  padding-bottom: 0.2em;
+  border-bottom: 1px solid var(--light);
+}
